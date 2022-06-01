@@ -1,9 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Threading.Tasks;
-namespace Covid_App.Model
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace Covid_App.Model.Request
 {
     public class AuthenticationRequest
     {

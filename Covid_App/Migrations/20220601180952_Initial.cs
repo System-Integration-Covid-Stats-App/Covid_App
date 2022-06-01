@@ -80,7 +80,7 @@ namespace Covid_App.Migrations
                 {
                     { 1, "Andrzej", "Andrzej" },
                     { 2, "Pawel", "Pawel" },
-                    { 3, "Andrzej", "Pawel" }
+                    { 3, "Andrzej", "Janek" }
                 });
 
             migrationBuilder.InsertData(
@@ -97,6 +97,12 @@ namespace Covid_App.Migrations
                 name: "IX_UserRoles_UserId",
                 table: "UserRoles",
                 column: "UserId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Users_Username",
+                table: "Users",
+                column: "Username",
+                unique: true);
         }
 
         /// <inheritdoc />

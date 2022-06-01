@@ -68,6 +68,9 @@ namespace Covid_App.Migrations
 
                     b.HasKey("UserId");
 
+                    b.HasIndex("Username")
+                        .IsUnique();
+
                     b.ToTable("Users");
 
                     b.HasData(
@@ -87,7 +90,7 @@ namespace Covid_App.Migrations
                         {
                             UserId = 3,
                             Password = "Andrzej",
-                            Username = "Pawel"
+                            Username = "Janek"
                         });
                 });
 

@@ -11,7 +11,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace Covid_App.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20220601115817_Initial")]
+    [Migration("20220601180952_Initial")]
     partial class Initial
     {
         /// <inheritdoc />
@@ -71,6 +71,9 @@ namespace Covid_App.Migrations
 
                     b.HasKey("UserId");
 
+                    b.HasIndex("Username")
+                        .IsUnique();
+
                     b.ToTable("Users");
 
                     b.HasData(
@@ -90,7 +93,7 @@ namespace Covid_App.Migrations
                         {
                             UserId = 3,
                             Password = "Andrzej",
-                            Username = "Pawel"
+                            Username = "Janek"
                         });
                 });
 

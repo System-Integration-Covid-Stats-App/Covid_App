@@ -4,6 +4,8 @@ using System.Text;
 using Covid_App.Data;
 using Covid_App.Entities;
 using Covid_App.Model;
+using Covid_App.Model.Request;
+using Covid_App.Model.Response;
 using Microsoft.IdentityModel.Tokens;
 
 namespace Covid_App.Services.Users;
@@ -21,14 +23,26 @@ public class UserServiceImpl : IUserService
     public AuthenticationResponse? Authenticate(AuthenticationRequest request)
     {
         var user = _dbContext.Users.FirstOrDefault(b => b.Username == request.Username);
-        if (user == null || user.Password != request.Password)
+        if (user == null || !user.Password.Equals(request.Password))
         {
             return null;
         }
         var token = GenerateJwtToken(user);
-        return new AuthenticationResponse(user, token);
+        return new AuthenticationResponse(token);
     }
-    
+
+    public CreateUserResponse RegisterUser(CreateUserRequest request)
+    {
+        User user = CreateUser(request);
+        UserRole userRole = CreateUserRole(user.UserId);
+        CreateUserResponse createUserResponse = new CreateUserResponse
+        {
+            UserId = user.UserId,
+            Username = user.Username,
+        };
+        return createUserResponse;
+    }
+
     public string GenerateJwtToken(User user)
     {
         var tokenHandler = new JwtSecurityTokenHandler();
@@ -47,6 +61,30 @@ public class UserServiceImpl : IUserService
         };
         var token = tokenHandler.CreateToken(tokenDescriptor);
         return tokenHandler.WriteToken(token);
+    }
+
+    private User CreateUser(CreateUserRequest request)
+    {
+        var user = new User
+        {
+            Username = request.Username,
+            Password = request.Password,
+        };
+        _dbContext.Users.Add(user);
+        _dbContext.SaveChanges();
+        return user;
+    }
+
+    private UserRole CreateUserRole(int userId)
+    {
+        var userRole = new UserRole
+        {
+            RoleId = 2,
+            UserId = userId
+        };
+        _dbContext.UserRoles.Add(userRole);
+        _dbContext.SaveChanges();
+        return userRole;
     }
 
 }

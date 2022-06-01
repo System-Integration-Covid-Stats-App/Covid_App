@@ -19,6 +19,7 @@ public class DataContext : DbContext
     { 
        // base.OnModelCreating(builder);
         builder.Entity<UserRole>().HasKey(sc => new {sc.RoleId,sc.UserId});
+        builder.Entity<User>().HasIndex(u => u.Username).IsUnique();
         SeedUser(builder);
     }
     private static void SeedUser(ModelBuilder builder)
@@ -28,7 +29,7 @@ public class DataContext : DbContext
         
         var user1 = CreateUser(1, "Andrzej", "Andrzej");
         var user2 = CreateUser(2, "Pawel", "Pawel");
-        var user3 = CreateUser(3, "Andrzej", "Pawel");
+        var user3 = CreateUser(3, "Andrzej", "Janek");
         
         
         builder.Entity<Role>().HasData(roleAdmin);
