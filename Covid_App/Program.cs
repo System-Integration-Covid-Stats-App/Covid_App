@@ -15,6 +15,8 @@ builder.Services.AddControllersWithViews();
 builder.Services.AddCors();
 builder.Services.AddControllers();
 builder.Services.AddScoped<IUserService,UserServiceImpl>();
+builder.Services.AddScoped<IAuthService,AuthServiceImpl>();
+
 builder.Services.AddDbContext<DataContext>(options =>
 {
     options.UseNpgsql(builder.Configuration.GetConnectionString("AppDb") ?? throw new InvalidOperationException());

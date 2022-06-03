@@ -20,18 +20,8 @@ public class UserServiceImpl : IUserService
         _configuration = configuration;
         _dbContext = dbContext;
     }
-    public AuthenticationResponse? Authenticate(AuthenticationRequest request)
-    {
-        var user = _dbContext.Users.FirstOrDefault(b => b.Username == request.Username);
-        if (user == null || !user.Password.Equals(request.Password))
-        {
-            return null;
-        }
-        var token = GenerateJwtToken(user);
-        return new AuthenticationResponse(token);
-    }
-
-    public CreateUserResponse RegisterUser(CreateUserRequest request)
+    
+    public CreateUserResponse RegisterUser(UserRequest request)
     {
         User user = CreateUser(request);
         UserRole userRole = CreateUserRole(user.UserId);
@@ -43,27 +33,22 @@ public class UserServiceImpl : IUserService
         return createUserResponse;
     }
 
-    public string GenerateJwtToken(User user)
+    public User UpdateUser(int userId, UserRequest request)
     {
-        var tokenHandler = new JwtSecurityTokenHandler();
-        var key = Encoding.ASCII.GetBytes(_configuration["Jwt:key"] ?? throw new InvalidOperationException());
-        var claims = new List<Claim>();
-        claims.Add(new Claim("id", user.UserId.ToString()));
-        var userRole = _dbContext.UserRoles.FirstOrDefault(ur => ur.UserId == user.UserId);
-        var role = _dbContext.Roles.FirstOrDefault(r => userRole != null && r.RoleId == userRole.RoleId);
-        if (role != null) claims.Add(new Claim(ClaimTypes.Role, role.Name));
-        var tokenDescriptor = new SecurityTokenDescriptor
-        {
-            Subject = new
-       ClaimsIdentity(claims.ToArray()),
-            Expires = DateTime.UtcNow.AddHours(1),
-            SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(key), SecurityAlgorithms.HmacSha256Signature)
-        };
-        var token = tokenHandler.CreateToken(tokenDescriptor);
-        return tokenHandler.WriteToken(token);
+        User user = findUserById(userId);
+        user.Username = request.Username;
+        user.Password = request.Password;
+        _dbContext.SaveChanges();
+        return user;
     }
 
-    private User CreateUser(CreateUserRequest request)
+
+    private User findUserById(int userId)
+    {
+        var user = _dbContext.Users.Find(userId);
+        return user;
+    }
+    private User CreateUser(UserRequest request)
     {
         var user = new User
         {

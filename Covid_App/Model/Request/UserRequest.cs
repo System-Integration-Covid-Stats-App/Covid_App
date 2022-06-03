@@ -2,7 +2,7 @@
 
 namespace Covid_App.Model.Request;
 
-public class CreateUserRequest
+public class UserRequest
 {
     [Required]
     public string? Username { get; set; }

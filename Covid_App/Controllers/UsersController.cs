@@ -12,19 +12,19 @@ namespace Covid_App.Controllers;
 public class UsersController : ControllerBase
 {
     private readonly IUserService _userService;
+    private readonly IAuthService _authService;
     
-    public UsersController(IUserService userService)
+    public UsersController(IUserService userService,IAuthService authService)
     {
         _userService = userService;
+        _authService = authService;
     }
     
     
     [HttpPost("authenticate")]
     public ActionResult<AuthenticationResponse>Authenticate(AuthenticationRequest request)
     {
-        Console.Write(request.Username);
-        Console.Write(request.Password);
-        var response = _userService.Authenticate(request);
+        var response = _authService.Authenticate(request);
         if (response == null)
             return BadRequest(new
             {
@@ -32,13 +32,19 @@ public class UsersController : ControllerBase
             });
         return Ok(response);
     }
-
     [HttpPost("createAccount")]
-    public ActionResult<CreateUserResponse> CreateUser(CreateUserRequest request)
+    public ActionResult<CreateUserResponse> CreateUser(UserRequest request)
     {
         var response = _userService.RegisterUser(request);
         return Ok(response);
     }
-   
+
+    [HttpPatch("updateAccount/{userId}")]
+    public ActionResult<User> UpdateUser(int userId,UserRequest request)
+    {
+        var response = _userService.UpdateUser(userId,request);
+        return Ok(response);
+    }
+
 }
 
