@@ -154,3 +154,7 @@ C:\Users\ja\source\repos\Covid_App\Covid_App\obj\Debug\net6.0\ref\Covid_App.dll
 C:\Users\ja\source\repos\Covid_App\Covid_App\bin\Debug\net6.0\Assets\data.json
 C:\Users\ja\source\repos\Covid_App\Covid_App\bin\Debug\net6.0\Assets\dataBlik.json
 C:\Users\ja\source\repos\Covid_App\Covid_App\bin\Debug\net6.0\Assets\dataFlu.json
+C:\Users\komp\RiderProjects\Nowy folder\Covid_App\Covid_App\bin\Debug\net6.0\Assets\data.json
+C:\Users\komp\RiderProjects\Nowy folder\Covid_App\Covid_App\bin\Debug\net6.0\Assets\dataBlik.json
+C:\Users\komp\RiderProjects\Nowy folder\Covid_App\Covid_App\bin\Debug\net6.0\Assets\dataFlu.json
+C:\Users\komp\RiderProjects\Nowy folder\Covid_App\Covid_App\bin\Debug\net6.0\Newtonsoft.Json.dll

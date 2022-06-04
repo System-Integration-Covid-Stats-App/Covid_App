@@ -6,6 +6,7 @@ using Covid_App.Entities;
 using Covid_App.Model;
 using Covid_App.Model.Request;
 using Covid_App.Model.Response;
+using Microsoft.EntityFrameworkCore.Storage;
 using Microsoft.IdentityModel.Tokens;
 
 namespace Covid_App.Services.Users;
@@ -23,13 +24,28 @@ public class UserServiceImpl : IUserService
     
     public CreateUserResponse RegisterUser(UserRequest request)
     {
-        User user = CreateUser(request);
-        UserRole userRole = CreateUserRole(user.UserId);
-        CreateUserResponse createUserResponse = new CreateUserResponse
+        CreateUserResponse createUserResponse = null;
+        using (IDbContextTransaction transaction = _dbContext.Database.BeginTransaction())
         {
-            UserId = user.UserId,
-            Username = user.Username,
-        };
+            try
+            {
+                User user = CreateUser(request);
+                //test transaction
+                //throw new Exception();
+                UserRole userRole = CreateUserRole(user.UserId);
+                createUserResponse = new CreateUserResponse
+                {
+                    UserId = user.UserId,
+                    Username = user.Username,
+                };
+                
+                transaction.Commit();
+            }
+            catch(Exception)
+            {
+                transaction.Rollback();
+            }
+        }
         return createUserResponse;
     }
 
