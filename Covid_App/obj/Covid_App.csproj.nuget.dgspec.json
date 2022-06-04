@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\komp\\RiderProjects\\Nowy folder\\Covid_App\\Covid_App\\Covid_App.csproj": {}
+    "C:\\Users\\ja\\source\\repos\\Covid_App\\Covid_App\\Covid_App.csproj": {}
   },
   "projects": {
-    "C:\\Users\\komp\\RiderProjects\\Nowy folder\\Covid_App\\Covid_App\\Covid_App.csproj": {
+    "C:\\Users\\ja\\source\\repos\\Covid_App\\Covid_App\\Covid_App.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\komp\\RiderProjects\\Nowy folder\\Covid_App\\Covid_App\\Covid_App.csproj",
+        "projectUniqueName": "C:\\Users\\ja\\source\\repos\\Covid_App\\Covid_App\\Covid_App.csproj",
         "projectName": "Covid_App",
-        "projectPath": "C:\\Users\\komp\\RiderProjects\\Nowy folder\\Covid_App\\Covid_App\\Covid_App.csproj",
-        "packagesPath": "C:\\Users\\komp\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\komp\\RiderProjects\\Nowy folder\\Covid_App\\Covid_App\\obj\\",
+        "projectPath": "C:\\Users\\ja\\source\\repos\\Covid_App\\Covid_App\\Covid_App.csproj",
+        "packagesPath": "C:\\Users\\ja\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ja\\source\\repos\\Covid_App\\Covid_App\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\komp\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ja\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -58,6 +62,10 @@
               "target": "Package",
               "version": "[7.0.0-preview.4.22229.2, )"
             },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            },
             "Npgsql.EntityFrameworkCore.PostgreSQL": {
               "target": "Package",
               "version": "[7.0.0-preview.4, )"
@@ -81,7 +89,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     }

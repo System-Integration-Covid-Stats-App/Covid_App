@@ -1,0 +1,128 @@
+[
+  {
+    "Kwartal": "2018  Q3",
+    "Wartosc": "1557,029168",
+    "Proc_BLIK": "0,466025851",
+    "Liczba": 17469865,
+    "Proc_liczb_BLIK": "0,717897892",
+    "Sr_dzienna_liczba_platnosci": "189889,837",
+    "Sr_wartosc_płatnosci": "89,12657127"
+  },
+  {
+    "Kwartal": "2018  Q4",
+    "Wartosc": "2314,454411",
+    "Proc_BLIK": "0,524397098",
+    "Liczba": 25258791,
+    "Proc_liczb_BLIK": "0,749265516",
+    "Sr_dzienna_liczba_platnosci": "274552,0761",
+    "Sr_wartosc_płatnosci": "91,62965919"
+  },
+  {
+    "Kwartal": "2019  Q1",
+    "Wartosc": "2685,896391",
+    "Proc_BLIK": "0,541906538",
+    "Liczba": 29772986,
+    "Proc_liczb_BLIK": "0,747642932",
+    "Sr_dzienna_liczba_platnosci": "330810,9556",
+    "Sr_wartosc_płatnosci": "90,21252994"
+  },
+  {
+    "Kwartal": "2019  Q2",
+    "Wartosc": "3344,811137",
+    "Proc_BLIK": "0,516290161",
+    "Liczba": 34740904,
+    "Proc_liczb_BLIK": "0,703078379",
+    "Sr_dzienna_liczba_platnosci": "381768,1758",
+    "Sr_wartosc_płatnosci": "96,27875938"
+  },
+  {
+    "Kwartal": "2019  Q3",
+    "Wartosc": "3864,585263",
+    "Proc_BLIK": "0,506191363",
+    "Liczba": 39455528,
+    "Proc_liczb_BLIK": "0,696626164",
+    "Sr_dzienna_liczba_platnosci": "428864,4348",
+    "Sr_wartosc_płatnosci": "97,94787851"
+  },
+  {
+    "Kwartal": "2019  Q4",
+    "Wartosc": "5393,168396",
+    "Proc_BLIK": "0,562896079",
+    "Liczba": 52758923,
+    "Proc_liczb_BLIK": "0,733276469",
+    "Sr_dzienna_liczba_platnosci": "573466,5543",
+    "Sr_wartosc_płatnosci": "102,2228675"
+  },
+  {
+    "Kwartal": "2020  Q1",
+    "Wartosc": "5973,679699",
+    "Proc_BLIK": "0,57958619",
+    "Liczba": 57544801,
+    "Proc_liczb_BLIK": "0,73787682",
+    "Sr_dzienna_liczba_platnosci": "632360,4505",
+    "Sr_wartosc_płatnosci": "103,809199"
+  },
+  {
+    "Kwartal": "2020  Q2",
+    "Wartosc": "8581,824457",
+    "Proc_BLIK": "0,651479388",
+    "Liczba": 72972392,
+    "Proc_liczb_BLIK": "0,76195374",
+    "Sr_dzienna_liczba_platnosci": "801894,4176",
+    "Sr_wartosc_płatnosci": "117,6037159"
+  },
+  {
+    "Kwartal": "2020  Q3",
+    "Wartosc": "8470,244263",
+    "Proc_BLIK": "0,580182127",
+    "Liczba": 77719982,
+    "Proc_liczb_BLIK": "0,704599578",
+    "Sr_dzienna_liczba_platnosci": "844782,413",
+    "Sr_wartosc_płatnosci": "108,9841254"
+  },
+  {
+    "Kwartal": "2020  Q4",
+    "Wartosc": "12084,38407",
+    "Proc_BLIK": "0,642854834",
+    "Liczba": 105539831,
+    "Proc_liczb_BLIK": "0,753392035",
+    "Sr_dzienna_liczba_platnosci": "1147172,076",
+    "Sr_wartosc_płatnosci": "114,5006957"
+  },
+  {
+    "Kwartal": "2021  Q1",
+    "Wartosc": "12780,06797",
+    "Proc_BLIK": "0,637030198",
+    "Liczba": 113574350,
+    "Proc_liczb_BLIK": "0,741927854",
+    "Sr_dzienna_liczba_platnosci": "1261937,222",
+    "Sr_wartosc_płatnosci": "112,5260058"
+  },
+  {
+    "Kwartal": "2021  Q2",
+    "Wartosc": "14535,97756",
+    "Proc_BLIK": "0,603450161",
+    "Liczba": 121494389,
+    "Proc_liczb_BLIK": "0,691003813",
+    "Sr_dzienna_liczba_platnosci": "1335103,176",
+    "Sr_wartosc_płatnosci": "119,6432007"
+  },
+  {
+    "Kwartal": "2021  Q3",
+    "Wartosc": "14740,57059",
+    "Proc_BLIK": "0,557205608",
+    "Liczba": 124630845,
+    "Proc_liczb_BLIK": "0,649174059",
+    "Sr_dzienna_liczba_platnosci": "1354683,098",
+    "Sr_wartosc_płatnosci": "118,2738558"
+  },
+  {
+    "Kwartal": "2021  Q4",
+    "Wartosc": "19160,94033",
+    "Proc_BLIK": "0,591620307",
+    "Liczba": 157994404,
+    "Proc_liczb_BLIK": "0,665264187",
+    "Sr_dzienna_liczba_platnosci": "1717330,478",
+    "Sr_wartosc_płatnosci": "121,2760695"
+  }
+]

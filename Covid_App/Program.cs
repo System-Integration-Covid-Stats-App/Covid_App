@@ -1,5 +1,6 @@
 using System.Text;
 using Covid_App.Data;
+using Covid_App.Services.Data;
 using Covid_App.Services.Users;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
@@ -16,6 +17,7 @@ builder.Services.AddCors();
 builder.Services.AddControllers();
 builder.Services.AddScoped<IUserService,UserServiceImpl>();
 builder.Services.AddScoped<IAuthService,AuthServiceImpl>();
+builder.Services.AddScoped<IDataService, DataService>();
 
 builder.Services.AddDbContext<DataContext>(options =>
 {

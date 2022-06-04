@@ -11,7 +11,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace Covid_App.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20220601180952_Initial")]
+    [Migration("20220604102832_Initial")]
     partial class Initial
     {
         /// <inheritdoc />

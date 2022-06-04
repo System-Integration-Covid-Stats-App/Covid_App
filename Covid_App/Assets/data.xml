@@ -1,0 +1,1270 @@
+<daneMakroekonomiczne-xml>
+	<wskaznik nazwa="Rachunek bieżący bilansu płatniczego">
+		<jednostka nazwa="mln EUR">
+			<lata rok="2000">
+				<wartosc>"."</wartosc>
+			</lata>
+			<lata rok="2001">
+				<wartosc>"."</wartosc>
+			</lata>
+			<lata rok="2002">
+				<wartosc>"."</wartosc>
+			</lata>
+			<lata rok="2003">
+				<wartosc>"."</wartosc>
+			</lata>
+			<lata rok="2004">
+				<wartosc>"-11816"</wartosc>
+			</lata>
+			<lata rok="2005">
+				<wartosc>"-7141"</wartosc>
+			</lata>
+			<lata rok="2006">
+				<wartosc>"-11822"</wartosc>
+			</lata>
+			<lata rok="2007">
+				<wartosc>"-20885"</wartosc>
+			</lata>
+			<lata rok="2008">
+				<wartosc>"-25403"</wartosc>
+			</lata>
+			<lata rok="2009">
+				<wartosc>"-13147"</wartosc>
+			</lata>
+			<lata rok="2010">
+				<wartosc>"-20079"</wartosc>
+			</lata>
+			<lata rok="2011">
+				<wartosc>"-20366"</wartosc>
+			</lata>
+			<lata rok="2012">
+				<wartosc>"-15685"</wartosc>
+			</lata>
+			<lata rok="2013">
+				<wartosc>"-7076"</wartosc>
+			</lata>
+			<lata rok="2014">
+				<wartosc>"-10613"</wartosc>
+			</lata>
+			<lata rok="2015">
+				<wartosc>"-3917"</wartosc>
+			</lata>
+			<lata rok="2016">
+				<wartosc>"-3384"</wartosc>
+			</lata>
+			<lata rok="2017">
+				<wartosc>"-1639"</wartosc>
+			</lata>
+			<lata rok="2018">
+				<wartosc>"-6515"</wartosc>
+			</lata>
+			<lata rok="2019">
+				<wartosc>"2523"</wartosc>
+			</lata>
+			<lata rok="2020">
+				<wartosc>"15287"</wartosc>
+			</lata>
+			<lata rok="2021">
+				<wartosc>"-3537"</wartosc>
+			</lata>
+		</jednostka>
+		<podzial nazwa="saldo obrotów towarowych">
+			<jednostka nazwa="mln EUR">
+				<lata rok="2000">
+					<wartosc>"."</wartosc>
+				</lata>
+				<lata rok="2001">
+					<wartosc>"."</wartosc>
+				</lata>
+				<lata rok="2002">
+					<wartosc>"."</wartosc>
+				</lata>
+				<lata rok="2003">
+					<wartosc>"."</wartosc>
+				</lata>
+				<lata rok="2004">
+					<wartosc>"-7709"</wartosc>
+				</lata>
+				<lata rok="2005">
+					<wartosc>"-5680"</wartosc>
+				</lata>
+				<lata rok="2006">
+					<wartosc>"-9163"</wartosc>
+				</lata>
+				<lata rok="2007">
+					<wartosc>"-18060"</wartosc>
+				</lata>
+				<lata rok="2008">
+					<wartosc>"-25177"</wartosc>
+				</lata>
+				<lata rok="2009">
+					<wartosc>"-8677"</wartosc>
+				</lata>
+				<lata rok="2010">
+					<wartosc>"-12021"</wartosc>
+				</lata>
+				<lata rok="2011">
+					<wartosc>"-14426"</wartosc>
+				</lata>
+				<lata rok="2012">
+					<wartosc>"-9670"</wartosc>
+				</lata>
+				<lata rok="2013">
+					<wartosc>"-2693"</wartosc>
+				</lata>
+				<lata rok="2014">
+					<wartosc>"-5608"</wartosc>
+				</lata>
+				<lata rok="2015">
+					<wartosc>"798"</wartosc>
+				</lata>
+				<lata rok="2016">
+					<wartosc>"2030"</wartosc>
+				</lata>
+				<lata rok="2017">
+					<wartosc>"-353"</wartosc>
+				</lata>
+				<lata rok="2018">
+					<wartosc>"-6219"</wartosc>
+				</lata>
+				<lata rok="2019">
+					<wartosc>"1527"</wartosc>
+				</lata>
+				<lata rok="2020">
+					<wartosc>"12472"</wartosc>
+				</lata>
+				<lata rok="2021">
+					<wartosc>"-599"</wartosc>
+				</lata>
+			</jednostka>
+		</podzial>
+		<podzial nazwa="saldo usług">
+			<jednostka nazwa="mln EUR">
+				<lata rok="2000">
+					<wartosc>"."</wartosc>
+				</lata>
+				<lata rok="2001">
+					<wartosc>"."</wartosc>
+				</lata>
+				<lata rok="2002">
+					<wartosc>"."</wartosc>
+				</lata>
+				<lata rok="2003">
+					<wartosc>"."</wartosc>
+				</lata>
+				<lata rok="2004">
+					<wartosc>"1811"</wartosc>
+				</lata>
+				<lata rok="2005">
+					<wartosc>"2482"</wartosc>
+				</lata>
+				<lata rok="2006">
+					<wartosc>"2504"</wartosc>
+				</lata>
+				<lata rok="2007">
+					<wartosc>"5953"</wartosc>
+				</lata>
+				<lata rok="2008">
+					<wartosc>"5745"</wartosc>
+				</lata>
+				<lata rok="2009">
+					<wartosc>"5484"</wartosc>
+				</lata>
+				<lata rok="2010">
+					<wartosc>"3745"</wartosc>
+				</lata>
+				<lata rok="2011">
+					<wartosc>"5528"</wartosc>
+				</lata>
+				<lata rok="2012">
+					<wartosc>"6297"</wartosc>
+				</lata>
+				<lata rok="2013">
+					<wartosc>"7970"</wartosc>
+				</lata>
+				<lata rok="2014">
+					<wartosc>"9424"</wartosc>
+				</lata>
+				<lata rok="2015">
+					<wartosc>"10874"</wartosc>
+				</lata>
+				<lata rok="2016">
+					<wartosc>"13752"</wartosc>
+				</lata>
+				<lata rok="2017">
+					<wartosc>"17872"</wartosc>
+				</lata>
+				<lata rok="2018">
+					<wartosc>"21262"</wartosc>
+				</lata>
+				<lata rok="2019">
+					<wartosc>"23863"</wartosc>
+				</lata>
+				<lata rok="2020">
+					<wartosc>"22832"</wartosc>
+				</lata>
+				<lata rok="2021">
+					<wartosc>"26406"</wartosc>
+				</lata>
+			</jednostka>
+		</podzial>
+		<podzial nazwa="saldo dochodów pierwotnych">
+			<jednostka nazwa="mln EUR">
+				<lata rok="2000">
+					<wartosc>"."</wartosc>
+				</lata>
+				<lata rok="2001">
+					<wartosc>"."</wartosc>
+				</lata>
+				<lata rok="2002">
+					<wartosc>"."</wartosc>
+				</lata>
+				<lata rok="2003">
+					<wartosc>"."</wartosc>
+				</lata>
+				<lata rok="2004">
+					<wartosc>"-6483"</wartosc>
+				</lata>
+				<lata rok="2005">
+					<wartosc>"-4127"</wartosc>
+				</lata>
+				<lata rok="2006">
+					<wartosc>"-5715"</wartosc>
+				</lata>
+				<lata rok="2007">
+					<wartosc>"-9544"</wartosc>
+				</lata>
+				<lata rok="2008">
+					<wartosc>"-6862"</wartosc>
+				</lata>
+				<lata rok="2009">
+					<wartosc>"-8976"</wartosc>
+				</lata>
+				<lata rok="2010">
+					<wartosc>"-11757"</wartosc>
+				</lata>
+				<lata rok="2011">
+					<wartosc>"-12226"</wartosc>
+				</lata>
+				<lata rok="2012">
+					<wartosc>"-12188"</wartosc>
+				</lata>
+				<lata rok="2013">
+					<wartosc>"-11926"</wartosc>
+				</lata>
+				<lata rok="2014">
+					<wartosc>"-14051"</wartosc>
+				</lata>
+				<lata rok="2015">
+					<wartosc>"-14727"</wartosc>
+				</lata>
+				<lata rok="2016">
+					<wartosc>"-17728"</wartosc>
+				</lata>
+				<lata rok="2017">
+					<wartosc>"-18996"</wartosc>
+				</lata>
+				<lata rok="2018">
+					<wartosc>"-20084"</wartosc>
+				</lata>
+				<lata rok="2019">
+					<wartosc>"-21115"</wartosc>
+				</lata>
+				<lata rok="2020">
+					<wartosc>"-18440"</wartosc>
+				</lata>
+				<lata rok="2021">
+					<wartosc>"-25376"</wartosc>
+				</lata>
+			</jednostka>
+		</podzial>
+		<podzial nazwa="saldo dochodów wtórnych">
+			<jednostka nazwa="mln EUR">
+				<lata rok="2000">
+					<wartosc>"."</wartosc>
+				</lata>
+				<lata rok="2001">
+					<wartosc>"."</wartosc>
+				</lata>
+				<lata rok="2002">
+					<wartosc>"."</wartosc>
+				</lata>
+				<lata rok="2003">
+					<wartosc>"."</wartosc>
+				</lata>
+				<lata rok="2004">
+					<wartosc>"565"</wartosc>
+				</lata>
+				<lata rok="2005">
+					<wartosc>"184"</wartosc>
+				</lata>
+				<lata rok="2006">
+					<wartosc>"552"</wartosc>
+				</lata>
+				<lata rok="2007">
+					<wartosc>"766"</wartosc>
+				</lata>
+				<lata rok="2008">
+					<wartosc>"891"</wartosc>
+				</lata>
+				<lata rok="2009">
+					<wartosc>"-978"</wartosc>
+				</lata>
+				<lata rok="2010">
+					<wartosc>"-46"</wartosc>
+				</lata>
+				<lata rok="2011">
+					<wartosc>"758"</wartosc>
+				</lata>
+				<lata rok="2012">
+					<wartosc>"-124"</wartosc>
+				</lata>
+				<lata rok="2013">
+					<wartosc>"-427"</wartosc>
+				</lata>
+				<lata rok="2014">
+					<wartosc>"-378"</wartosc>
+				</lata>
+				<lata rok="2015">
+					<wartosc>"-862"</wartosc>
+				</lata>
+				<lata rok="2016">
+					<wartosc>"-1438"</wartosc>
+				</lata>
+				<lata rok="2017">
+					<wartosc>"-162"</wartosc>
+				</lata>
+				<lata rok="2018">
+					<wartosc>"-1474"</wartosc>
+				</lata>
+				<lata rok="2019">
+					<wartosc>"-1752"</wartosc>
+				</lata>
+				<lata rok="2020">
+					<wartosc>"-1577"</wartosc>
+				</lata>
+				<lata rok="2021">
+					<wartosc>"-3968"</wartosc>
+				</lata>
+			</jednostka>
+		</podzial>
+	</wskaznik>
+	<wskaznik nazwa="Rachunek kapitałowy">
+		<jednostka nazwa="mln EUR">
+			<lata rok="2000">
+				<wartosc>"."</wartosc>
+			</lata>
+			<lata rok="2001">
+				<wartosc>"."</wartosc>
+			</lata>
+			<lata rok="2002">
+				<wartosc>"."</wartosc>
+			</lata>
+			<lata rok="2003">
+				<wartosc>"."</wartosc>
+			</lata>
+			<lata rok="2004">
+				<wartosc>"955"</wartosc>
+			</lata>
+			<lata rok="2005">
+				<wartosc>"786"</wartosc>
+			</lata>
+			<lata rok="2006">
+				<wartosc>"1666"</wartosc>
+			</lata>
+			<lata rok="2007">
+				<wartosc>"3418"</wartosc>
+			</lata>
+			<lata rok="2008">
+				<wartosc>"4067"</wartosc>
+			</lata>
+			<lata rok="2009">
+				<wartosc>"5080"</wartosc>
+			</lata>
+			<lata rok="2010">
+				<wartosc>"6446"</wartosc>
+			</lata>
+			<lata rok="2011">
+				<wartosc>"7254"</wartosc>
+			</lata>
+			<lata rok="2012">
+				<wartosc>"8549"</wartosc>
+			</lata>
+			<lata rok="2013">
+				<wartosc>"9006"</wartosc>
+			</lata>
+			<lata rok="2014">
+				<wartosc>"10034"</wartosc>
+			</lata>
+			<lata rok="2015">
+				<wartosc>"10158"</wartosc>
+			</lata>
+			<lata rok="2016">
+				<wartosc>"4457"</wartosc>
+			</lata>
+			<lata rok="2017">
+				<wartosc>"5891"</wartosc>
+			</lata>
+			<lata rok="2018">
+				<wartosc>"10423"</wartosc>
+			</lata>
+			<lata rok="2019">
+				<wartosc>"10544"</wartosc>
+			</lata>
+			<lata rok="2020">
+				<wartosc>"12065"</wartosc>
+			</lata>
+			<lata rok="2021">
+				<wartosc>"9271"</wartosc>
+			</lata>
+		</jednostka>
+	</wskaznik>
+	<wskaznik nazwa="Rachunek finansowy">
+		<jednostka nazwa="mln EUR">
+			<lata rok="2000">
+				<wartosc>"."</wartosc>
+			</lata>
+			<lata rok="2001">
+				<wartosc>"."</wartosc>
+			</lata>
+			<lata rok="2002">
+				<wartosc>"."</wartosc>
+			</lata>
+			<lata rok="2003">
+				<wartosc>"."</wartosc>
+			</lata>
+			<lata rok="2004">
+				<wartosc>"-5921"</wartosc>
+			</lata>
+			<lata rok="2005">
+				<wartosc>"-5698"</wartosc>
+			</lata>
+			<lata rok="2006">
+				<wartosc>"-8488"</wartosc>
+			</lata>
+			<lata rok="2007">
+				<wartosc>"-18237"</wartosc>
+			</lata>
+			<lata rok="2008">
+				<wartosc>"-28403"</wartosc>
+			</lata>
+			<lata rok="2009">
+				<wartosc>"-14113"</wartosc>
+			</lata>
+			<lata rok="2010">
+				<wartosc>"-23270"</wartosc>
+			</lata>
+			<lata rok="2011">
+				<wartosc>"-19658"</wartosc>
+			</lata>
+			<lata rok="2012">
+				<wartosc>"-8910"</wartosc>
+			</lata>
+			<lata rok="2013">
+				<wartosc>"-4563"</wartosc>
+			</lata>
+			<lata rok="2014">
+				<wartosc>"-4808"</wartosc>
+			</lata>
+			<lata rok="2015">
+				<wartosc>"528"</wartosc>
+			</lata>
+			<lata rok="2016">
+				<wartosc>"1335"</wartosc>
+			</lata>
+			<lata rok="2017">
+				<wartosc>"-2284"</wartosc>
+			</lata>
+			<lata rok="2018">
+				<wartosc>"1175"</wartosc>
+			</lata>
+			<lata rok="2019">
+				<wartosc>"5637"</wartosc>
+			</lata>
+			<lata rok="2020">
+				<wartosc>"20186"</wartosc>
+			</lata>
+			<lata rok="2021">
+				<wartosc>"1208"</wartosc>
+			</lata>
+		</jednostka>
+		<podzial nazwa="inwestycje bezpośrednie:">
+			<podzial nazwa="aktywa">
+				<jednostka nazwa="mln EUR">
+					<lata rok="2000">
+						<wartosc>"."</wartosc>
+					</lata>
+					<lata rok="2001">
+						<wartosc>"."</wartosc>
+					</lata>
+					<lata rok="2002">
+						<wartosc>"."</wartosc>
+					</lata>
+					<lata rok="2003">
+						<wartosc>"."</wartosc>
+					</lata>
+					<lata rok="2004">
+						<wartosc>"1711"</wartosc>
+					</lata>
+					<lata rok="2005">
+						<wartosc>"3394"</wartosc>
+					</lata>
+					<lata rok="2006">
+						<wartosc>"8444"</wartosc>
+					</lata>
+					<lata rok="2007">
+						<wartosc>"5411"</wartosc>
+					</lata>
+					<lata rok="2008">
+						<wartosc>"2958"</wartosc>
+					</lata>
+					<lata rok="2009">
+						<wartosc>"4369"</wartosc>
+					</lata>
+					<lata rok="2010">
+						<wartosc>"7051"</wartosc>
+					</lata>
+					<lata rok="2011">
+						<wartosc>"3458"</wartosc>
+					</lata>
+					<lata rok="2012">
+						<wartosc>"1055"</wartosc>
+					</lata>
+					<lata rok="2013">
+						<wartosc>"-2525"</wartosc>
+					</lata>
+					<lata rok="2014">
+						<wartosc>"5091"</wartosc>
+					</lata>
+					<lata rok="2015">
+						<wartosc>"4388"</wartosc>
+					</lata>
+					<lata rok="2016">
+						<wartosc>"12813"</wartosc>
+					</lata>
+					<lata rok="2017">
+						<wartosc>"3431"</wartosc>
+					</lata>
+					<lata rok="2018">
+						<wartosc>"1951"</wartosc>
+					</lata>
+					<lata rok="2019">
+						<wartosc>"4593"</wartosc>
+					</lata>
+					<lata rok="2020">
+						<wartosc>"4053"</wartosc>
+					</lata>
+					<lata rok="2021">
+						<wartosc>"7061"</wartosc>
+					</lata>
+				</jednostka>
+			</podzial>
+			<podzial nazwa="pasywa">
+				<jednostka nazwa="mln EUR">
+					<lata rok="2000">
+						<wartosc>"."</wartosc>
+					</lata>
+					<lata rok="2001">
+						<wartosc>"."</wartosc>
+					</lata>
+					<lata rok="2002">
+						<wartosc>"."</wartosc>
+					</lata>
+					<lata rok="2003">
+						<wartosc>"."</wartosc>
+					</lata>
+					<lata rok="2004">
+						<wartosc>"11169"</wartosc>
+					</lata>
+					<lata rok="2005">
+						<wartosc>"8929"</wartosc>
+					</lata>
+					<lata rok="2006">
+						<wartosc>"17021"</wartosc>
+					</lata>
+					<lata rok="2007">
+						<wartosc>"18252"</wartosc>
+					</lata>
+					<lata rok="2008">
+						<wartosc>"9720"</wartosc>
+					</lata>
+					<lata rok="2009">
+						<wartosc>"10110"</wartosc>
+					</lata>
+					<lata rok="2010">
+						<wartosc>"13536"</wartosc>
+					</lata>
+					<lata rok="2011">
+						<wartosc>"13309"</wartosc>
+					</lata>
+					<lata rok="2012">
+						<wartosc>"5770"</wartosc>
+					</lata>
+					<lata rok="2013">
+						<wartosc>"658"</wartosc>
+					</lata>
+					<lata rok="2014">
+						<wartosc>"14821"</wartosc>
+					</lata>
+					<lata rok="2015">
+						<wartosc>"13530"</wartosc>
+					</lata>
+					<lata rok="2016">
+						<wartosc>"16639"</wartosc>
+					</lata>
+					<lata rok="2017">
+						<wartosc>"10182"</wartosc>
+					</lata>
+					<lata rok="2018">
+						<wartosc>"14805"</wartosc>
+					</lata>
+					<lata rok="2019">
+						<wartosc>"14971"</wartosc>
+					</lata>
+					<lata rok="2020">
+						<wartosc>"15190"</wartosc>
+					</lata>
+					<lata rok="2021">
+						<wartosc>"27911"</wartosc>
+					</lata>
+				</jednostka>
+			</podzial>
+		</podzial>
+		<podzial nazwa="inwestycje portfelowe:">
+			<podzial nazwa="aktywa">
+				<jednostka nazwa="mln EUR">
+					<lata rok="2000">
+						<wartosc>"."</wartosc>
+					</lata>
+					<lata rok="2001">
+						<wartosc>"."</wartosc>
+					</lata>
+					<lata rok="2002">
+						<wartosc>"."</wartosc>
+					</lata>
+					<lata rok="2003">
+						<wartosc>"."</wartosc>
+					</lata>
+					<lata rok="2004">
+						<wartosc>"1053"</wartosc>
+					</lata>
+					<lata rok="2005">
+						<wartosc>"2006"</wartosc>
+					</lata>
+					<lata rok="2006">
+						<wartosc>"3682"</wartosc>
+					</lata>
+					<lata rok="2007">
+						<wartosc>"4604"</wartosc>
+					</lata>
+					<lata rok="2008">
+						<wartosc>"-1700"</wartosc>
+					</lata>
+					<lata rok="2009">
+						<wartosc>"1008"</wartosc>
+					</lata>
+					<lata rok="2010">
+						<wartosc>"-82"</wartosc>
+					</lata>
+					<lata rok="2011">
+						<wartosc>"-559"</wartosc>
+					</lata>
+					<lata rok="2012">
+						<wartosc>"376"</wartosc>
+					</lata>
+					<lata rok="2013">
+						<wartosc>"1689"</wartosc>
+					</lata>
+					<lata rok="2014">
+						<wartosc>"4283"</wartosc>
+					</lata>
+					<lata rok="2015">
+						<wartosc>"10030"</wartosc>
+					</lata>
+					<lata rok="2016">
+						<wartosc>"-5436"</wartosc>
+					</lata>
+					<lata rok="2017">
+						<wartosc>"1320"</wartosc>
+					</lata>
+					<lata rok="2018">
+						<wartosc>"482"</wartosc>
+					</lata>
+					<lata rok="2019">
+						<wartosc>"-269"</wartosc>
+					</lata>
+					<lata rok="2020">
+						<wartosc>"-3452"</wartosc>
+					</lata>
+					<lata rok="2021">
+						<wartosc>"4134"</wartosc>
+					</lata>
+				</jednostka>
+			</podzial>
+			<podzial nazwa="pasywa">
+				<jednostka nazwa="mln EUR">
+					<lata rok="2000">
+						<wartosc>"."</wartosc>
+					</lata>
+					<lata rok="2001">
+						<wartosc>"."</wartosc>
+					</lata>
+					<lata rok="2002">
+						<wartosc>"."</wartosc>
+					</lata>
+					<lata rok="2003">
+						<wartosc>"."</wartosc>
+					</lata>
+					<lata rok="2004">
+						<wartosc>"8489"</wartosc>
+					</lata>
+					<lata rok="2005">
+						<wartosc>"11797"</wartosc>
+					</lata>
+					<lata rok="2006">
+						<wartosc>"1483"</wartosc>
+					</lata>
+					<lata rok="2007">
+						<wartosc>"-24"</wartosc>
+					</lata>
+					<lata rok="2008">
+						<wartosc>"-3656"</wartosc>
+					</lata>
+					<lata rok="2009">
+						<wartosc>"11302"</wartosc>
+					</lata>
+					<lata rok="2010">
+						<wartosc>"21817"</wartosc>
+					</lata>
+					<lata rok="2011">
+						<wartosc>"11764"</wartosc>
+					</lata>
+					<lata rok="2012">
+						<wartosc>"15679"</wartosc>
+					</lata>
+					<lata rok="2013">
+						<wartosc>"1899"</wartosc>
+					</lata>
+					<lata rok="2014">
+						<wartosc>"2595"</wartosc>
+					</lata>
+					<lata rok="2015">
+						<wartosc>"7235"</wartosc>
+					</lata>
+					<lata rok="2016">
+						<wartosc>"-2077"</wartosc>
+					</lata>
+					<lata rok="2017">
+						<wartosc>"5466"</wartosc>
+					</lata>
+					<lata rok="2018">
+						<wartosc>"-3249"</wartosc>
+					</lata>
+					<lata rok="2019">
+						<wartosc>"-10835"</wartosc>
+					</lata>
+					<lata rok="2020">
+						<wartosc>"-9999"</wartosc>
+					</lata>
+					<lata rok="2021">
+						<wartosc>"-5429"</wartosc>
+					</lata>
+				</jednostka>
+			</podzial>
+		</podzial>
+		<podzial nazwa="pozostałe inwestycje:">
+			<podzial nazwa="aktywa">
+				<jednostka nazwa="mln EUR">
+					<lata rok="2000">
+						<wartosc>"."</wartosc>
+					</lata>
+					<lata rok="2001">
+						<wartosc>"."</wartosc>
+					</lata>
+					<lata rok="2002">
+						<wartosc>"."</wartosc>
+					</lata>
+					<lata rok="2003">
+						<wartosc>"."</wartosc>
+					</lata>
+					<lata rok="2004">
+						<wartosc>"9628"</wartosc>
+					</lata>
+					<lata rok="2005">
+						<wartosc>"2178"</wartosc>
+					</lata>
+					<lata rok="2006">
+						<wartosc>"3202"</wartosc>
+					</lata>
+					<lata rok="2007">
+						<wartosc>"1324"</wartosc>
+					</lata>
+					<lata rok="2008">
+						<wartosc>"-4083"</wartosc>
+					</lata>
+					<lata rok="2009">
+						<wartosc>"-3857"</wartosc>
+					</lata>
+					<lata rok="2010">
+						<wartosc>"2987"</wartosc>
+					</lata>
+					<lata rok="2011">
+						<wartosc>"2716"</wartosc>
+					</lata>
+					<lata rok="2012">
+						<wartosc>"1722"</wartosc>
+					</lata>
+					<lata rok="2013">
+						<wartosc>"1215"</wartosc>
+					</lata>
+					<lata rok="2014">
+						<wartosc>"3071"</wartosc>
+					</lata>
+					<lata rok="2015">
+						<wartosc>"4600"</wartosc>
+					</lata>
+					<lata rok="2016">
+						<wartosc>"2487"</wartosc>
+					</lata>
+					<lata rok="2017">
+						<wartosc>"5728"</wartosc>
+					</lata>
+					<lata rok="2018">
+						<wartosc>"5185"</wartosc>
+					</lata>
+					<lata rok="2019">
+						<wartosc>"1259"</wartosc>
+					</lata>
+					<lata rok="2020">
+						<wartosc>"13678"</wartosc>
+					</lata>
+					<lata rok="2021">
+						<wartosc>"12603"</wartosc>
+					</lata>
+				</jednostka>
+			</podzial>
+			<podzial nazwa="pasywa">
+				<jednostka nazwa="mln EUR">
+					<lata rok="2000">
+						<wartosc>"."</wartosc>
+					</lata>
+					<lata rok="2001">
+						<wartosc>"."</wartosc>
+					</lata>
+					<lata rok="2002">
+						<wartosc>"."</wartosc>
+					</lata>
+					<lata rok="2003">
+						<wartosc>"."</wartosc>
+					</lata>
+					<lata rok="2004">
+						<wartosc>"-813"</wartosc>
+					</lata>
+					<lata rok="2005">
+						<wartosc>"-1131"</wartosc>
+					</lata>
+					<lata rok="2006">
+						<wartosc>"7890"</wartosc>
+					</lata>
+					<lata rok="2007">
+						<wartosc>"22183"</wartosc>
+					</lata>
+					<lata rok="2008">
+						<wartosc>"17832"</wartosc>
+					</lata>
+					<lata rok="2009">
+						<wartosc>"5935"</wartosc>
+					</lata>
+					<lata rok="2010">
+						<wartosc>"9818"</wartosc>
+					</lata>
+					<lata rok="2011">
+						<wartosc>"5014"</wartosc>
+					</lata>
+					<lata rok="2012">
+						<wartosc>"-2786"</wartosc>
+					</lata>
+					<lata rok="2013">
+						<wartosc>"2613"</wartosc>
+					</lata>
+					<lata rok="2014">
+						<wartosc>"277"</wartosc>
+					</lata>
+					<lata rok="2015">
+						<wartosc>"-2213"</wartosc>
+					</lata>
+					<lata rok="2016">
+						<wartosc>"14572"</wartosc>
+					</lata>
+					<lata rok="2017">
+						<wartosc>"-11032"</wartosc>
+					</lata>
+					<lata rok="2018">
+						<wartosc>"41"</wartosc>
+					</lata>
+					<lata rok="2019">
+						<wartosc>"3915"</wartosc>
+					</lata>
+					<lata rok="2020">
+						<wartosc>"3888"</wartosc>
+					</lata>
+					<lata rok="2021">
+						<wartosc>"13077"</wartosc>
+					</lata>
+				</jednostka>
+			</podzial>
+		</podzial>
+		<podzial nazwa="pochodne instrumenty finansowe">
+			<jednostka nazwa="mln EUR">
+				<lata rok="2000">
+					<wartosc>"."</wartosc>
+				</lata>
+				<lata rok="2001">
+					<wartosc>"."</wartosc>
+				</lata>
+				<lata rok="2002">
+					<wartosc>"."</wartosc>
+				</lata>
+				<lata rok="2003">
+					<wartosc>"."</wartosc>
+				</lata>
+				<lata rok="2004">
+					<wartosc>"-154"</wartosc>
+				</lata>
+				<lata rok="2005">
+					<wartosc>"-138"</wartosc>
+				</lata>
+				<lata rok="2006">
+					<wartosc>"548"</wartosc>
+				</lata>
+				<lata rok="2007">
+					<wartosc>"1457"</wartosc>
+				</lata>
+				<lata rok="2008">
+					<wartosc>"745"</wartosc>
+				</lata>
+				<lata rok="2009">
+					<wartosc>"1301"</wartosc>
+				</lata>
+				<lata rok="2010">
+					<wartosc>"449"</wartosc>
+				</lata>
+				<lata rok="2011">
+					<wartosc>"119"</wartosc>
+				</lata>
+				<lata rok="2012">
+					<wartosc>"-2133"</wartosc>
+				</lata>
+				<lata rok="2013">
+					<wartosc>"-526"</wartosc>
+				</lata>
+				<lata rok="2014">
+					<wartosc>"-16"</wartosc>
+				</lata>
+				<lata rok="2015">
+					<wartosc>"-879"</wartosc>
+				</lata>
+				<lata rok="2016">
+					<wartosc>"175"</wartosc>
+				</lata>
+				<lata rok="2017">
+					<wartosc>"-1004"</wartosc>
+				</lata>
+				<lata rok="2018">
+					<wartosc>"-1074"</wartosc>
+				</lata>
+				<lata rok="2019">
+					<wartosc>"-1105"</wartosc>
+				</lata>
+				<lata rok="2020">
+					<wartosc>"-929"</wartosc>
+				</lata>
+				<lata rok="2021">
+					<wartosc>"-2933"</wartosc>
+				</lata>
+			</jednostka>
+		</podzial>
+		<podzial nazwa="oficjalne aktywa rezerwowe">
+			<jednostka nazwa="mln EUR">
+				<lata rok="2000">
+					<wartosc>"."</wartosc>
+				</lata>
+				<lata rok="2001">
+					<wartosc>"."</wartosc>
+				</lata>
+				<lata rok="2002">
+					<wartosc>"."</wartosc>
+				</lata>
+				<lata rok="2003">
+					<wartosc>"."</wartosc>
+				</lata>
+				<lata rok="2004">
+					<wartosc>"686"</wartosc>
+				</lata>
+				<lata rok="2005">
+					<wartosc>"6457"</wartosc>
+				</lata>
+				<lata rok="2006">
+					<wartosc>"2030"</wartosc>
+				</lata>
+				<lata rok="2007">
+					<wartosc>"9378"</wartosc>
+				</lata>
+				<lata rok="2008">
+					<wartosc>"-2427"</wartosc>
+				</lata>
+				<lata rok="2009">
+					<wartosc>"10413"</wartosc>
+				</lata>
+				<lata rok="2010">
+					<wartosc>"11496"</wartosc>
+				</lata>
+				<lata rok="2011">
+					<wartosc>"4695"</wartosc>
+				</lata>
+				<lata rok="2012">
+					<wartosc>"8733"</wartosc>
+				</lata>
+				<lata rok="2013">
+					<wartosc>"754"</wartosc>
+				</lata>
+				<lata rok="2014">
+					<wartosc>"456"</wartosc>
+				</lata>
+				<lata rok="2015">
+					<wartosc>"941"</wartosc>
+				</lata>
+				<lata rok="2016">
+					<wartosc>"20430"</wartosc>
+				</lata>
+				<lata rok="2017">
+					<wartosc>"-7143"</wartosc>
+				</lata>
+				<lata rok="2018">
+					<wartosc>"6228"</wartosc>
+				</lata>
+				<lata rok="2019">
+					<wartosc>"9210"</wartosc>
+				</lata>
+				<lata rok="2020">
+					<wartosc>"15915"</wartosc>
+				</lata>
+				<lata rok="2021">
+					<wartosc>"15902"</wartosc>
+				</lata>
+			</jednostka>
+		</podzial>
+	</wskaznik>
+	<wskaznik nazwa="Saldo błędów i opuszczeń">
+		<jednostka nazwa="mln EUR">
+			<lata rok="2000">
+				<wartosc>"."</wartosc>
+			</lata>
+			<lata rok="2001">
+				<wartosc>"."</wartosc>
+			</lata>
+			<lata rok="2002">
+				<wartosc>"."</wartosc>
+			</lata>
+			<lata rok="2003">
+				<wartosc>"."</wartosc>
+			</lata>
+			<lata rok="2004">
+				<wartosc>"4940"</wartosc>
+			</lata>
+			<lata rok="2005">
+				<wartosc>"657"</wartosc>
+			</lata>
+			<lata rok="2006">
+				<wartosc>"1668"</wartosc>
+			</lata>
+			<lata rok="2007">
+				<wartosc>"-770"</wartosc>
+			</lata>
+			<lata rok="2008">
+				<wartosc>"-7067"</wartosc>
+			</lata>
+			<lata rok="2009">
+				<wartosc>"-6046"</wartosc>
+			</lata>
+			<lata rok="2010">
+				<wartosc>"-9637"</wartosc>
+			</lata>
+			<lata rok="2011">
+				<wartosc>"-6546"</wartosc>
+			</lata>
+			<lata rok="2012">
+				<wartosc>"-1774"</wartosc>
+			</lata>
+			<lata rok="2013">
+				<wartosc>"-6493"</wartosc>
+			</lata>
+			<lata rok="2014">
+				<wartosc>"-4229"</wartosc>
+			</lata>
+			<lata rok="2015">
+				<wartosc>"-5713"</wartosc>
+			</lata>
+			<lata rok="2016">
+				<wartosc>"262"</wartosc>
+			</lata>
+			<lata rok="2017">
+				<wartosc>"-6536"</wartosc>
+			</lata>
+			<lata rok="2018">
+				<wartosc>"-2733"</wartosc>
+			</lata>
+			<lata rok="2019">
+				<wartosc>"-7430"</wartosc>
+			</lata>
+			<lata rok="2020">
+				<wartosc>"-7166"</wartosc>
+			</lata>
+			<lata rok="2021">
+				<wartosc>"-4526"</wartosc>
+			</lata>
+		</jednostka>
+	</wskaznik>
+	<wskaznik nazwa="Relacja rachunku bieżącego bilansu płatniczego do produktu krajowego brutto">
+		<jednostka nazwa="%">
+			<lata rok="2000">
+				<wartosc>"."</wartosc>
+			</lata>
+			<lata rok="2001">
+				<wartosc>"."</wartosc>
+			</lata>
+			<lata rok="2002">
+				<wartosc>"."</wartosc>
+			</lata>
+			<lata rok="2003">
+				<wartosc>"."</wartosc>
+			</lata>
+			<lata rok="2004">
+				<wartosc>"-5,8"</wartosc>
+			</lata>
+			<lata rok="2005">
+				<wartosc>"-2,9"</wartosc>
+			</lata>
+			<lata rok="2006">
+				<wartosc>"-4,3"</wartosc>
+			</lata>
+			<lata rok="2007">
+				<wartosc>"-6,6"</wartosc>
+			</lata>
+			<lata rok="2008">
+				<wartosc>"-6,9"</wartosc>
+			</lata>
+			<lata rok="2009">
+				<wartosc>"-4,1"</wartosc>
+			</lata>
+			<lata rok="2010">
+				<wartosc>"-5,5"</wartosc>
+			</lata>
+			<lata rok="2011">
+				<wartosc>"-5,4"</wartosc>
+			</lata>
+			<lata rok="2012">
+				<wartosc>"-4,0"</wartosc>
+			</lata>
+			<lata rok="2013">
+				<wartosc>"-1,8"</wartosc>
+			</lata>
+			<lata rok="2014">
+				<wartosc>"-2,6"</wartosc>
+			</lata>
+			<lata rok="2015">
+				<wartosc>"-0,9"</wartosc>
+			</lata>
+			<lata rok="2016">
+				<wartosc>"-0,8"</wartosc>
+			</lata>
+			<lata rok="2017">
+				<wartosc>"-0,3"</wartosc>
+			</lata>
+			<lata rok="2018">
+				<wartosc>"-1,3"</wartosc>
+			</lata>
+			<lata rok="2019">
+				<wartosc>"0,5"</wartosc>
+			</lata>
+			<lata rok="2020">
+				<wartosc>"2,9"</wartosc>
+			</lata>
+			<lata rok="2021">
+				<wartosc>"-0,6"</wartosc>
+			</lata>
+		</jednostka>
+		<w_tym>
+			<podzial nazwa="relacja salda płatności towarowych do produktu krajowego brutto">
+				<jednostka nazwa="%">
+					<lata rok="2000">
+						<wartosc>"."</wartosc>
+					</lata>
+					<lata rok="2001">
+						<wartosc>"."</wartosc>
+					</lata>
+					<lata rok="2002">
+						<wartosc>"."</wartosc>
+					</lata>
+					<lata rok="2003">
+						<wartosc>"."</wartosc>
+					</lata>
+					<lata rok="2004">
+						<wartosc>"-3,8"</wartosc>
+					</lata>
+					<lata rok="2005">
+						<wartosc>"-2,3"</wartosc>
+					</lata>
+					<lata rok="2006">
+						<wartosc>"-3,3"</wartosc>
+					</lata>
+					<lata rok="2007">
+						<wartosc>"-5,7"</wartosc>
+					</lata>
+					<lata rok="2008">
+						<wartosc>"-6,9"</wartosc>
+					</lata>
+					<lata rok="2009">
+						<wartosc>"-2,7"</wartosc>
+					</lata>
+					<lata rok="2010">
+						<wartosc>"-3,3"</wartosc>
+					</lata>
+					<lata rok="2011">
+						<wartosc>"-3,8"</wartosc>
+					</lata>
+					<lata rok="2012">
+						<wartosc>"-2,5"</wartosc>
+					</lata>
+					<lata rok="2013">
+						<wartosc>"-0,7"</wartosc>
+					</lata>
+					<lata rok="2014">
+						<wartosc>"-1,4"</wartosc>
+					</lata>
+					<lata rok="2015">
+						<wartosc>"0,2"</wartosc>
+					</lata>
+					<lata rok="2016">
+						<wartosc>"0,5"</wartosc>
+					</lata>
+					<lata rok="2017">
+						<wartosc>"-0,1"</wartosc>
+					</lata>
+					<lata rok="2018">
+						<wartosc>"-1,2"</wartosc>
+					</lata>
+					<lata rok="2019">
+						<wartosc>"0,3"</wartosc>
+					</lata>
+					<lata rok="2020">
+						<wartosc>"2,4"</wartosc>
+					</lata>
+					<lata rok="2021">
+						<wartosc>"-0,1"</wartosc>
+					</lata>
+				</jednostka>
+			</podzial>
+		</w_tym>
+	</wskaznik>
+</daneMakroekonomiczne-xml>

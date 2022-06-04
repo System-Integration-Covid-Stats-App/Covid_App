@@ -1,0 +1,26 @@
+[
+  {
+    "Rok": 2017,
+    "Liczba": 5043491,
+    "Zapadalnosc": 13126.5,
+    "Spadek_wzrost_zapadalnosci": 1892.6
+  },
+  {
+    "Rok": 2018,
+    "Liczba": 5239293,
+    "Zapadalnosc": 13639.3,
+    "Spadek_wzrost_zapadalnosci": 512.8
+  },
+  {
+    "Rok": 2019,
+    "Liczba": 4790033,
+    "Zapadalnosc": 12478.4,
+    "Spadek_wzrost_zapadalnosci": -1160.9
+  },
+  {
+    "Rok": 2020,
+    "Liczba": 3160711,
+    "Zapadalnosc": 8240.9,
+    "Spadek_wzrost_zapadalnosci": -4237.5
+  }
+]
