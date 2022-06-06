@@ -42,25 +42,22 @@ namespace Covid_App.Services.Data
             return balanceOfServices;
         }
 
-        public Dictionary<string, int> GetDeathsCount()
+        public SortedDictionary<DateTime, int> GetDeathsData()
         {
             string path = Directory.GetCurrentDirectory();
             StreamReader r = File.OpenText(path + "/Assets/data.json");
             string json = r.ReadToEnd();
             List<JsonData> items = JsonConvert.DeserializeObject<List<JsonData>>(json);
-            //var nullCount = 0;
             SortedDictionary<DateTime, int> monthlyStats = new SortedDictionary<DateTime, int>();
-            Dictionary<string, int> monthlyStatsString = new Dictionary<string, int>();
+            
             for (int i = 0; i < items.Count; i++)
             {
                 if (items[i].Kod_ter == null)
                 {
                     items.Remove(items[i]);
-                    //nullCount++;
                     i--;
                 }
             }
-            
             foreach (var i in items)
             {
                 string[] formats = {"MM yyyy"};
@@ -79,30 +76,75 @@ namespace Covid_App.Services.Data
                 }
             }
 
+            return monthlyStats;
+        }
+
+        public Dictionary<string, int> GetDeathsCountBeforeCovid()
+        {
+            var monthlyStats = GetDeathsData();
+            Dictionary<string, int> monthlyStatsString = new Dictionary<string, int>();
+            
+            var count = 0;
             foreach (var m in monthlyStats)
             {
-                monthlyStatsString.Add(m.Key.ToString("MM yyyy"), m.Value);
+                if (count <= 26)
+                {
+                    monthlyStatsString.Add(m.Key.ToString("MM yyyy"), m.Value);
+                    count++;
+                }
+            }
+            
+            return monthlyStatsString;
+        }
+        
+        public Dictionary<string, int> GetDeathsCountWhileCovid()
+        {
+            var monthlyStats = GetDeathsData();
+            Dictionary<string, int> monthlyStatsString = new Dictionary<string, int>();
+
+            var count = 0;
+            foreach (var m in monthlyStats)
+            {
+                if (count >= 27)
+                {
+                    monthlyStatsString.Add(m.Key.ToString("MM yyyy"), m.Value);
+                }
+                count++;
             }
             
             return monthlyStatsString;
         }
 
-        public List<BlikPayments> GetBlikPayments()
+        public Dictionary<string, Int32> GetBlikPayments()
         {
             string path = Directory.GetCurrentDirectory();
             StreamReader r = File.OpenText(path + "/Assets/dataBlik.json");
             string json = r.ReadToEnd();
             List<BlikPayments> items = JsonConvert.DeserializeObject<List<BlikPayments>>(json);
-            return items;
+            Dictionary<string, Int32> blikData = new Dictionary<string, int>();
+            
+            foreach (var i in items)
+            {
+                blikData.Add(i.Kwartal, i.Liczba);
+            }
+            
+            return blikData;
         }
 
-        public List<FluData> GetFluData()
+        public Dictionary<string, Int32> GetFluData()
         {
             string path = Directory.GetCurrentDirectory();
             StreamReader r = File.OpenText(path + "/Assets/dataFlu.json");
             string json = r.ReadToEnd();
             List<FluData> items = JsonConvert.DeserializeObject<List<FluData>>(json);
-            return items;
+            Dictionary<string, Int32> fluData = new Dictionary<string, int>();
+            
+            foreach (var i in items)
+            {
+                fluData.Add(Convert.ToString(i.Rok), i.Liczba);
+            }
+            
+            return fluData;
         }
     }
 }

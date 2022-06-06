@@ -17,7 +17,7 @@ namespace Covid_App.Controllers
         }
 
         [HttpGet("stats")]
-        [Authorize(Roles = "admin", AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
+        //[Authorize(Roles = "admin", AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
         public ActionResult<Dictionary<int, double>> GetBalanceOfServices()
         {
             string xmlpath = Path.Combine("Assets", "data.xml");
@@ -25,25 +25,33 @@ namespace Covid_App.Controllers
             return Ok(balanceOfServices);
         }
 
-        [HttpGet("json")]
-        [Authorize(Roles = "admin", AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
-        public ActionResult<Dictionary<string, int>> GetDeathsCount()
+        [HttpGet("deathsBeforeCovid")]
+        //[Authorize(Roles = "admin", AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
+        public ActionResult<Dictionary<string, int>> GetDeathsCountBeforeCovid()
         {
-            var deaths = dataService.GetDeathsCount();
+            var deaths = dataService.GetDeathsCountBeforeCovid();
+            return Ok(deaths);
+        }
+        
+        [HttpGet("deathsWhileCovid")]
+        //[Authorize(Roles = "admin", AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
+        public ActionResult<Dictionary<string, int>> GetDeathsCountWhileCovid()
+        {
+            var deaths = dataService.GetDeathsCountWhileCovid();
             return Ok(deaths);
         }
 
         [HttpGet("blik")]
-        [Authorize(Roles = "admin", AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
-        public ActionResult<List<JsonData>> GetBlikPayments()
+        //[Authorize(Roles = "admin", AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
+        public ActionResult<Dictionary<string, Int32>> GetBlikPayments()
         {
             var blik = dataService.GetBlikPayments();
             return Ok(blik);
         }
 
         [HttpGet("flu")]
-        [Authorize(Roles = "admin", AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
-        public ActionResult<List<JsonData>> GetFluData()
+        //[Authorize(Roles = "admin", AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
+        public ActionResult<Dictionary<string, Int32>> GetFluData()
         {
             var flu = dataService.GetFluData();
             return Ok(flu);
