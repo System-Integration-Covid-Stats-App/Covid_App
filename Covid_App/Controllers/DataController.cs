@@ -27,7 +27,7 @@ namespace Covid_App.Controllers
 
         [HttpGet("json")]
         [Authorize(Roles = "admin", AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
-        public ActionResult<List<JsonData>> GetDeathsCount()
+        public ActionResult<Dictionary<string, int>> GetDeathsCount()
         {
             var deaths = dataService.GetDeathsCount();
             return Ok(deaths);

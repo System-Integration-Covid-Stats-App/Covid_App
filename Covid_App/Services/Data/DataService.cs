@@ -1,4 +1,5 @@
-﻿using Covid_App.Entities;
+﻿using System.Globalization;
+using Covid_App.Entities;
 using Newtonsoft.Json;
 using System.Xml;
 
@@ -41,18 +42,15 @@ namespace Covid_App.Services.Data
             return balanceOfServices;
         }
 
-        public List<JsonData> GetDeathsCount()
+        public Dictionary<string, int> GetDeathsCount()
         {
             string path = Directory.GetCurrentDirectory();
             StreamReader r = File.OpenText(path + "/Assets/data.json");
             string json = r.ReadToEnd();
             List<JsonData> items = JsonConvert.DeserializeObject<List<JsonData>>(json);
             //var nullCount = 0;
-            foreach (var i in items)
-            {
-                Console.WriteLine(i);
-            }
-            
+            SortedDictionary<DateTime, int> monthlyStats = new SortedDictionary<DateTime, int>();
+            Dictionary<string, int> monthlyStatsString = new Dictionary<string, int>();
             for (int i = 0; i < items.Count; i++)
             {
                 if (items[i].Kod_ter == null)
@@ -62,7 +60,31 @@ namespace Covid_App.Services.Data
                     i--;
                 }
             }
-            return items;
+            
+            foreach (var i in items)
+            {
+                string[] formats = {"MM yyyy"};
+                if (Convert.ToInt16(i.Rok) >= 2018)
+                {
+                    var date = i.Miesiac + " " + i.Rok;
+                    var dateTime = DateTime.ParseExact(date, formats, null, DateTimeStyles.None);
+                    if (!monthlyStats.ContainsKey(dateTime))
+                    {
+                        monthlyStats.Add(dateTime, Convert.ToInt32(i.Liczba_zgonow));
+                    }
+                    else
+                    {
+                        monthlyStats[dateTime] += Convert.ToInt32(i.Liczba_zgonow);
+                    }
+                }
+            }
+
+            foreach (var m in monthlyStats)
+            {
+                monthlyStatsString.Add(m.Key.ToString("MM yyyy"), m.Value);
+            }
+            
+            return monthlyStatsString;
         }
 
         public List<BlikPayments> GetBlikPayments()
