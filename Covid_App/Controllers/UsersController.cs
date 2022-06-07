@@ -55,6 +55,14 @@ public class UsersController : ControllerBase
         var response = _userService.UpdateUser(userId,request);
         return Ok(response);
     }
+    
+    [HttpDelete("deleteAccount/{userId}")]
+    [Authorize(Roles = "user", AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
+    public ActionResult<User> DeleteUser(int userId)
+    {
+        var response = _userService.DeleteUser(userId);
+        return Ok(response);
+    }
 
 }
 

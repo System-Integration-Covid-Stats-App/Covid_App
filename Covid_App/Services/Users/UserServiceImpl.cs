@@ -66,6 +66,13 @@ public class UserServiceImpl : IUserService
         return user;
     }
 
+    public User DeleteUser(int userId)
+    {
+        User user = findUserById(userId);
+        _dbContext.Remove(user);
+        _dbContext.SaveChanges();
+        return user;
+    }
 
     public User findUserById(int userId)
     {

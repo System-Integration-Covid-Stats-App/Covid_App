@@ -11,6 +11,7 @@ namespace Covid_App.Services.Users
 
         User UpdateUser(int userId,UpdateUserRequest request);
         User findUserById(int userId);
+        User DeleteUser(int userId);
     }
 }
 
