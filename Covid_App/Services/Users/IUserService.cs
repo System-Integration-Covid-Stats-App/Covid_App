@@ -9,7 +9,8 @@ namespace Covid_App.Services.Users
     {
         CreateUserResponse RegisterUser(UserRequest request);
 
-        User UpdateUser(int userId,UserRequest request);
+        User UpdateUser(int userId,UpdateUserRequest request);
+        User findUserById(int userId);
     }
 }
 

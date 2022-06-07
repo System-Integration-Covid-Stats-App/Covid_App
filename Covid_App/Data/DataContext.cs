@@ -27,9 +27,9 @@ public class DataContext : DbContext
         var roleAdmin = CreateRole(1,"admin");
         var roleUser = CreateRole(2,"user");
         
-        var user1 = CreateUser(1, "Andrzej", "Andrzej");
-        var user2 = CreateUser(2, "Pawel", "Pawel");
-        var user3 = CreateUser(3, "Andrzej", "Janek");
+        var user1 = CreateUser(1, "admin", "admin","");
+        var user2 = CreateUser(2, "pawel", "pawel", "pawel@gmail.com");
+        var user3 = CreateUser(3, "maciej", "maciej", "maciek@gmail.com");
         
         
         builder.Entity<Role>().HasData(roleAdmin);
@@ -66,13 +66,14 @@ public class DataContext : DbContext
         return role;
     }
 
-    private static User CreateUser(int id,string password, string username)
+    private static User CreateUser(int id,string password, string username, string email)
     {
         var user = new User
         {
             UserId = id,
             Password = password,
             Username = username,
+            Email = email
         };
         return user;
     }

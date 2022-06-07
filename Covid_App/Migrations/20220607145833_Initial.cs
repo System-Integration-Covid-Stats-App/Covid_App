@@ -33,7 +33,8 @@ namespace Covid_App.Migrations
                     UserId = table.Column<int>(type: "integer", nullable: false)
                         .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
                     Username = table.Column<string>(type: "text", nullable: false),
-                    Password = table.Column<string>(type: "text", nullable: false)
+                    Password = table.Column<string>(type: "text", nullable: false),
+                    Email = table.Column<string>(type: "text", nullable: true)
                 },
                 constraints: table =>
                 {
@@ -75,12 +76,12 @@ namespace Covid_App.Migrations
 
             migrationBuilder.InsertData(
                 table: "Users",
-                columns: new[] { "UserId", "Password", "Username" },
+                columns: new[] { "UserId", "Email", "Password", "Username" },
                 values: new object[,]
                 {
-                    { 1, "Andrzej", "Andrzej" },
-                    { 2, "Pawel", "Pawel" },
-                    { 3, "Andrzej", "Janek" }
+                    { 1, "", "admin", "admin" },
+                    { 2, "pawel@gmail.com", "pawel", "pawel" },
+                    { 3, "maciek@gmail.com", "maciej", "maciej" }
                 });
 
             migrationBuilder.InsertData(

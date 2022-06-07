@@ -4,6 +4,8 @@ using Covid_App.Model;
 using Covid_App.Model.Request;
 using Covid_App.Model.Response;
 using Covid_App.Services.Users;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Covid_App.Controllers;
 
@@ -39,8 +41,16 @@ public class UsersController : ControllerBase
         return Ok(response);
     }
 
+    [HttpGet("user/{userId}")]
+    [Authorize(Roles = "user", AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
+    public ActionResult<User> GetUserById(int userId)
+    {
+        var response = _userService.findUserById(userId);
+        return response;
+    }
     [HttpPatch("updateAccount/{userId}")]
-    public ActionResult<User> UpdateUser(int userId,UserRequest request)
+    [Authorize(Roles = "user", AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
+    public ActionResult<User> UpdateUser(int userId,UpdateUserRequest request)
     {
         var response = _userService.UpdateUser(userId,request);
         return Ok(response);

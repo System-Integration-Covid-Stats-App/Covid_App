@@ -2,12 +2,10 @@
 
 namespace Covid_App.Model.Request;
 
-public class UserRequest
+public class UpdateUserRequest
 {
     [Required]
     public string? Username { get; set; }
     [Required]
-    public string? Password { get; set; }
-    
     public string? Email { get; set; }
 }

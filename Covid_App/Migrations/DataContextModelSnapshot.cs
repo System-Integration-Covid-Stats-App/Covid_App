@@ -58,6 +58,9 @@ namespace Covid_App.Migrations
 
                     NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("UserId"));
 
+                    b.Property<string>("Email")
+                        .HasColumnType("text");
+
                     b.Property<string>("Password")
                         .IsRequired()
                         .HasColumnType("text");
@@ -77,20 +80,23 @@ namespace Covid_App.Migrations
                         new
                         {
                             UserId = 1,
-                            Password = "Andrzej",
-                            Username = "Andrzej"
+                            Email = "",
+                            Password = "admin",
+                            Username = "admin"
                         },
                         new
                         {
                             UserId = 2,
-                            Password = "Pawel",
-                            Username = "Pawel"
+                            Email = "pawel@gmail.com",
+                            Password = "pawel",
+                            Username = "pawel"
                         },
                         new
                         {
                             UserId = 3,
-                            Password = "Andrzej",
-                            Username = "Janek"
+                            Email = "maciek@gmail.com",
+                            Password = "maciej",
+                            Username = "maciej"
                         });
                 });
 

@@ -24,6 +24,9 @@ public class UserServiceImpl : IUserService
     
     public CreateUserResponse RegisterUser(UserRequest request)
     {
+        Console.Write(request.Email);
+        Console.Write(request.Password);
+        Console.Write(request.Username);
         CreateUserResponse createUserResponse = null;
         using (IDbContextTransaction transaction = _dbContext.Database.BeginTransaction())
         {
@@ -49,17 +52,22 @@ public class UserServiceImpl : IUserService
         return createUserResponse;
     }
 
-    public User UpdateUser(int userId, UserRequest request)
+    public User GetUserById(int userId)
+    {
+        throw new NotImplementedException();
+    }
+
+    public User UpdateUser(int userId, UpdateUserRequest request)
     {
         User user = findUserById(userId);
         user.Username = request.Username;
-        user.Password = request.Password;
+        user.Email = request.Email;
         _dbContext.SaveChanges();
         return user;
     }
 
 
-    private User findUserById(int userId)
+    public User findUserById(int userId)
     {
         var user = _dbContext.Users.Find(userId);
         return user;
@@ -70,6 +78,7 @@ public class UserServiceImpl : IUserService
         {
             Username = request.Username,
             Password = request.Password,
+            Email = request.Email
         };
         _dbContext.Users.Add(user);
         _dbContext.SaveChanges();
