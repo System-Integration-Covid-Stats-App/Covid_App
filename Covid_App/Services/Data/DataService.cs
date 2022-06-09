@@ -1,4 +1,5 @@
-﻿using System.Globalization;
+﻿using System.Data;
+using System.Globalization;
 using Covid_App.Entities;
 using Newtonsoft.Json;
 using System.Xml;
@@ -145,6 +146,42 @@ namespace Covid_App.Services.Data
             }
             
             return fluData;
+        }
+
+        public void ExportXmlFile()
+        {
+            string xmlpath = Path.Combine("Assets", "data.xml");
+            Dictionary<int, double> data = GetBalanceOfServices(xmlpath);
+            DataSet ds = new DataSet("DS");  
+            ds.Namespace = "Saldo usług";  
+            DataTable stdTable = new DataTable("Dane");  
+            DataColumn col1 = new DataColumn("Rok");  
+            DataColumn col2 = new DataColumn("Wartość");  
+            stdTable.Columns.Add(col1);  
+            stdTable.Columns.Add(col2);  
+            ds.Tables.Add(stdTable);  
+            
+            DataRow newRow;
+            foreach (var d in data)
+            {
+                newRow = stdTable.NewRow();  
+                newRow["Rok"] = Convert.ToString(d.Key);  
+                newRow["Wartość"] = Convert.ToString(d.Value);  
+                stdTable.Rows.Add(newRow);
+            }
+            ds.AcceptChanges();
+            ds.WriteXml("Export/balanceOfServices.xml");
+        }
+
+        public void ExportJsonFile(string path)
+        {
+            Dictionary<string, int> exportDeaths1 = GetDeathsCountBeforeCovid();
+            Dictionary<string, int> exportDeaths2 = GetDeathsCountWhileCovid();
+            using (StreamWriter file = File.CreateText(path))
+            {
+                JsonSerializer serializer = new JsonSerializer();
+                serializer.Serialize(file, exportDeaths1);
+            }
         }
     }
 }

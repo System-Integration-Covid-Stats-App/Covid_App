@@ -1,4 +1,5 @@
-﻿using Covid_App.Entities;
+﻿using System.Data;
+using Covid_App.Entities;
 
 namespace Covid_App.Services.Data
 {
@@ -10,5 +11,7 @@ namespace Covid_App.Services.Data
         Dictionary<string, int> GetDeathsCountWhileCovid();
         Dictionary<string, Int32> GetBlikPayments();
         Dictionary<string, Int32> GetFluData();
+        void ExportXmlFile();
+        void ExportJsonFile(string path);
     }
 }

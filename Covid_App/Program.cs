@@ -23,7 +23,8 @@ builder.Services.AddScoped<IAdminService, AdminServiceImpl>();
 
 builder.Services.AddDbContext<DataContext>(options =>
 {
-    options.UseNpgsql(builder.Configuration.GetConnectionString("AppDb") ?? throw new InvalidOperationException());
+    var connectionString = Environment.GetEnvironmentVariable("DB");
+    options.UseNpgsql(connectionString);
 });
 
 
@@ -64,5 +65,13 @@ app.UseEndpoints(endpoints =>
 
 
 app.MapGet("/", () => "Hello World!");
+
+if (!app.Environment.IsDevelopment())
+{
+    using var scope = app.Services.CreateScope();
+    var services = scope.ServiceProvider;
+    var context = services.GetRequiredService<DataContext>();
+    context.Database.Migrate();
+}
 
 app.Run();

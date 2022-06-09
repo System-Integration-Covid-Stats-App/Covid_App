@@ -1,0 +1,32 @@
+﻿version: '3.7'
+
+services:
+
+  web:
+    container_name: 'covid_app'
+    image: 'covid_app'
+    ports:
+      - "7241:80"
+    depends_on:
+      - "postgres"
+    environment:
+      DB: "host=postgres;port=5432;database=covid_app;username=postgres;password=password;"
+    networks:
+      - aspnetcoreapp-network
+
+  postgres:
+    container_name: 'postgres'
+    image: postgres
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_HOST: localhost
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: covid_app
+    networks:
+      - aspnetcoreapp-network
+
+networks:
+  aspnetcoreapp-network:
+    driver: bridge

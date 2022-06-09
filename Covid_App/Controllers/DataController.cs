@@ -56,5 +56,18 @@ namespace Covid_App.Controllers
             var flu = dataService.GetFluData();
             return Ok(flu);
         }
+        [HttpGet("export")]
+        //[Authorize(Roles = "admin", AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
+        public void ExportXmlData()
+        {
+            dataService.ExportXmlFile();
+        }
+        
+        /*[HttpGet("exportjson")]
+        //[Authorize(Roles = "admin", AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
+        public void ExportJsonData()
+        {
+            dataService.ExportJsonFile("Export/Json1.json");
+        }*/
     }
 }
