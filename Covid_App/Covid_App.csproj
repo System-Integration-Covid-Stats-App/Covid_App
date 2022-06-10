@@ -20,9 +20,14 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="Export" />
       <Folder Include="Migrations" />
       <Folder Include="Assets\" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Update=".dockerignore">
+        <DependentUpon>Dockerfile</DependentUpon>
+      </None>
     </ItemGroup>
 
 </Project>

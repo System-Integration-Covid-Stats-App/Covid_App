@@ -177,10 +177,65 @@ namespace Covid_App.Services.Data
         {
             Dictionary<string, int> exportDeaths1 = GetDeathsCountBeforeCovid();
             Dictionary<string, int> exportDeaths2 = GetDeathsCountWhileCovid();
+            List<ExportJsonData> exportJsonDatas = new List<ExportJsonData>();
+            foreach (var e1 in exportDeaths1)
+            {
+                exportJsonDatas.Add(new ExportJsonData()
+                {
+                    Data = e1.Key,
+                    Liczba_zgonow = e1.Value
+                });
+            }
+            foreach (var e2 in exportDeaths2)
+            {
+                exportJsonDatas.Add(new ExportJsonData()
+                {
+                    Data = e2.Key,
+                    Liczba_zgonow = e2.Value
+                });
+            }
             using (StreamWriter file = File.CreateText(path))
             {
                 JsonSerializer serializer = new JsonSerializer();
-                serializer.Serialize(file, exportDeaths1);
+                serializer.Serialize(file, exportJsonDatas);
+            }
+        }
+
+        public void ExportBlikJsonFile(string path)
+        {
+            Dictionary<string, int> blikData = GetBlikPayments();
+            List<ExportBlikPayments> exportBlikDatas = new List<ExportBlikPayments>();
+            foreach (var b in blikData)
+            {
+                exportBlikDatas.Add(new ExportBlikPayments()
+                {
+                    Kwartal = b.Key,
+                    Liczba = b.Value
+                });
+            }
+            using (StreamWriter file = File.CreateText(path))
+            {
+                JsonSerializer serializer = new JsonSerializer();
+                serializer.Serialize(file, exportBlikDatas);
+            }
+        }
+
+        public void ExportFluJsonFile(string path)
+        {
+            Dictionary<string, int> fluData = GetFluData();
+            List<ExportFluData> exportFluDatas = new List<ExportFluData>();
+            foreach (var f in fluData)
+            {
+                exportFluDatas.Add(new ExportFluData()
+                {
+                    Rok = f.Key,
+                    Liczba = f.Value
+                });
+            }
+            using (StreamWriter file = File.CreateText(path))
+            {
+                JsonSerializer serializer = new JsonSerializer();
+                serializer.Serialize(file, exportFluDatas);
             }
         }
     }

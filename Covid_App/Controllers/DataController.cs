@@ -63,11 +63,25 @@ namespace Covid_App.Controllers
             dataService.ExportXmlFile();
         }
         
-        /*[HttpGet("exportjson")]
+        [HttpGet("exportjson")]
         //[Authorize(Roles = "admin", AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
         public void ExportJsonData()
         {
             dataService.ExportJsonFile("Export/Json1.json");
-        }*/
+        }
+        
+        [HttpGet("exportblik")]
+        //[Authorize(Roles = "admin", AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
+        public void ExportBlikData()
+        {
+            dataService.ExportBlikJsonFile("Export/Json2.json");
+        }
+        
+        [HttpGet("exportflu")]
+        //[Authorize(Roles = "admin", AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
+        public void ExportFluData()
+        {
+            dataService.ExportFluJsonFile("Export/Json3.json");
+        }
     }
 }

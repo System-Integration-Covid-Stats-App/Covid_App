@@ -17,4 +17,5 @@ RUN dotnet publish "Covid_App.csproj" -c Release -o /app/publish
 FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
+COPY "Covid_App/Assets/data.xml" /app/Assets
 ENTRYPOINT ["dotnet", "Covid_App.dll"]

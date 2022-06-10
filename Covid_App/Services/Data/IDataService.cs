@@ -13,5 +13,7 @@ namespace Covid_App.Services.Data
         Dictionary<string, Int32> GetFluData();
         void ExportXmlFile();
         void ExportJsonFile(string path);
+        void ExportBlikJsonFile(string path);
+        void ExportFluJsonFile(string path);
     }
 }
